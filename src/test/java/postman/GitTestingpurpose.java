@@ -9,5 +9,7 @@ public class GitTestingpurpose {
 		System.out.println("to");
 		System.out.println("the");
 		System.out.println("eclipse");
+		
+		System.out.println("This is for git testing purpose");
 	}
 }
