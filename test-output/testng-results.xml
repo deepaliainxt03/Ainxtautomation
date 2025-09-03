@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-02T10:15:23 IST" name="Default suite" finished-at="2025-07-02T10:20:54 IST" duration-ms="330495">
+    <groups>
+    </groups>
+    <test started-at="2025-07-02T10:15:23 IST" name="Default test" finished-at="2025-07-02T10:20:54 IST" duration-ms="330495">
+      <class name="APIs.AadharMaskingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:APIs.AadharMaskingTest@ebb6851]" started-at="2025-07-02T10:15:23 IST" name="setUp" finished-at="2025-07-02T10:15:24 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runMaskingFlow()[pri:0, instance:APIs.AadharMaskingTest@ebb6851]" started-at="2025-07-02T10:15:24 IST" name="runMaskingFlow" finished-at="2025-07-02T10:20:53 IST" duration-ms="329508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runMaskingFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:APIs.AadharMaskingTest@ebb6851]" started-at="2025-07-02T10:20:53 IST" name="tearDown" finished-at="2025-07-02T10:20:54 IST" duration-ms="262" status="FAIL">
+          <exception class="java.nio.file.FileSystemException">
+            <message>
+              <![CDATA[E:\Aaadhar Masked and Cropped.xlsx: The process cannot access the file because it is being used by another process]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.nio.file.FileSystemException: E:\Aaadhar Masked and Cropped.xlsx: The process cannot access the file because it is being used by another process
+at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+at java.base/java.nio.file.Files.newOutputStream(Files.java:228)
+at APIs.AadharMaskingTest.tearDown(AadharMaskingTest.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.nio.file.FileSystemException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- APIs.AadharMaskingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
